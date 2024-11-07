@@ -1,0 +1,86 @@
+{
+  "Index": {
+    "title": "Hello! I'm ",
+    "description": "Software developer with experience in Frontend and Mobile development",
+    "projectsButton": "See my projects",
+    "projects": "Projects",
+    "portfolio": "Discover how I developed this portfolio",
+    "techstack": "Tech stack"
+  },
+  "Navbar": {
+    "index": "Index",
+    "projects": "Projects",
+    "aboutme": "About me",
+    "contact": "Contact"
+  },
+  "About": {
+    "title": "Development of My Web Portfolio",
+    "intro": "Explore the technologies and techniques behind this project.",
+    "technologiesTitle": "Tech stack",
+    "nextjs": "Next.js 14",
+    "nextjsDesc": "Modern and optimized framework. Perfect for SEO.",
+    "notionAPI": "Notion API",
+    "notionDesc": "Open source database for project and tasks management.",
+    "i18n": "i18n",
+    "i18nDesc": "Multilingual support for spanish and english language.",
+    "tailwind": "TailwindCSS",
+    "tailwindDesc": "Modern and responsive design.",
+    "hosting": "Hosting",
+    "hostingDesc": "Hosted in Vercel",
+    "featuresTitle": "Highlighted Features",
+    "featuresIntro": "This portfolio includes advanced features like:",
+    "featureMultilanguage": "Multilingual with i18n",
+    "featureResponsive": "Fully responsive design",
+    "featureSEO": "SEO and performance optimization",
+    "featureDark": "Light and dark mode",
+    "aboutTitle": "Why build a project like this",
+    "aboutParagraph": "On this website, I develop the most common concepts required for large software projects.",
+    "aboutParagraph2": "I also showcase real projects where I have implemented other features not present in this project.",
+    "developmentProcessTitle": "Development Process",
+    "developmentProcessText": "I have invest enough time planning and developing this project to deliver my best in this project.",
+    "conclusion": "Thank you for visiting my portfolio. I hope you enjoy exploring it as much as I enjoyed creating it!",
+    "mail": "Mails with nodemailer",
+    "mailDesc": "If you use the contact form, you and I will receive an email with the contact information."
+  },
+  "Detail": {
+    "active": "In production",
+    "unactive": "Discontinued"
+  },
+  "Me": {
+    "name": "Humberto Gabriel López Trigueros",
+    "jobTitle": "Software developer",
+    "dateOfBirthLabel": "Birthdate",
+    "locationLabel": "Location",
+    "location": "Mairena del Alcor, Seville, 41510",
+    "countryLabel": "Country",
+    "country": "Spain",
+    "emailLabel": "Email",
+    "email": "humbertolopezdev@gmail.com",
+    "hobbiesLabel": "Hobbies",
+    "hobbies": "Videography, photography, music, 3D modeling.",
+    "biographyTitle": "Biography",
+    "biographyContent": "I am a 26-year-old born in Mairena del Alcor, a town in Seville. Since I was young, I have been fascinated by technology and how it works.",
+    "biographyContent2": "Together with my father, I used to play with small electronics experiments and build models controlled by radio control. Later, I ventured into programming with tools like Scratch and blogs on Blogger, where I would manually modify the code or add widgets.",
+    "biographyContent3": "I decided to study programming while also pursuing another of my passions, music, at the Professional Conservatory of Music in Seville. There, I learned the foundations and concepts of object-oriented programming, cross-platform languages, and their applications. I was also fortunate to share this stage with highly skilled classmates, many of whom are now working in software development.",
+    "biographyContent4": "After completing my studies, I continued developing my skills both in companies and on my own. I have been able to develop projects from the start through to the final deployment stage, using various technologies and implementing features that set my projects apart.",
+    "biographyContent5": "Today, I remain motivated to keep learning, not only in software development but also in other areas that allow me to acquire skills I can use in my work, such as video editing, 3D modeling with Blender and other programs, photography, and music. In these disciplines, I find an unending drive to keep learning and growing in all aspects."
+  },
+  "Technologies": {
+    "technologiesTitle": "Technologies I Know",
+    "technologiesIntro": "Here are some of the technologies I have experience with.",
+    "knowledgeDistribution": "Knowledge Distribution",
+    "knowledgeLevel": "Knowledge Level"
+  },
+  "Contact": {
+    "contactTitle": "Get in Touch",
+    "contactIntro": "Feel free to reach out via this form or through my social media links.",
+    "nameLabel": "Your Name",
+    "emailLabel": "Your Email",
+    "subject": "Subject",
+    "messageLabel": "Your Message",
+    "submitButton": "Send Message",
+    "formSubmission": "Your message has been submitted. Thank you!",
+    "socialTitle": "Or connect with me on"
+  }
+
+}
