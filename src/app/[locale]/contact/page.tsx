@@ -6,7 +6,7 @@ import { useState } from 'react';
 const Contact = () => {
   const t = useTranslations('Contact');
   const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
-  const [message, setMessage] = useState('')
+  const [message, setMessage] = useState('JEJEJEJJE')
   const [loading, setLoading] = useState(false)
 
   const locale = window.location.pathname.split("/")[1]
@@ -38,7 +38,7 @@ const Contact = () => {
 
   return (
     <main className="min-h-screen p-8 bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
-      {message ? <p className='bg-indigo-100 dark:bg-gray-800 max-w-3xl mx-auto h-8 text-gray-800 rounded-lg shadow-lg dark:text-gray-200 pl-2'>{message}</p> : (<div className="max-w-3xl mx-auto bg-indigo-100 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+      {message ? <p className='bg-indigo-100 dark:bg-gray-800 max-w-3xl mx-auto h-14 content-center text-gray-800 rounded-lg shadow-lg dark:text-gray-200 pl-4'>{message}</p> : (<div className="max-w-3xl mx-auto bg-indigo-100 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
         <h1 className="text-3xl font-bold mb-4 text-gray-800 dark:text-gray-200 text-center">
           {t('contactTitle')}
         </h1>

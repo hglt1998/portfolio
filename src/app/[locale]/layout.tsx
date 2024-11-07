@@ -9,6 +9,14 @@ export const metadata: Metadata = {
   title: "Humberto López",
   description: "Created with NextJS 14",
   icons: { icon: '/favicon.ico' },
+  applicationName: "Humberto López Portfolio",
+  keywords: ['portfolio', 'Humberto López', 'humbertolopezdev@gmail.com'],
+  twitter: {
+    card: 'summary_large_image',
+    title: "Humberto López Portfolio",
+    description: "Get in touch with me",
+    images: ['/public/pexels.webp']
+  }
 };
 
 export default function RootLayout({
