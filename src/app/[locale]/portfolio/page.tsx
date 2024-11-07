@@ -36,6 +36,8 @@ export default function AboutPortfolioPage() {
             <span><strong>{t('hosting')}</strong> - {t('hostingDesc')}</span>
           </li>
         </ul>
+
+
       </aside>
 
       {/* Columna derecha - Cuerpo */}
