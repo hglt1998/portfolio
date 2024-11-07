@@ -15,7 +15,14 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "Humberto López Portfolio",
     description: "Get in touch with me",
-    images: ['/public/pexels.webp']
+    images: ['https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2']
+  },
+  openGraph: {
+    title: 'Humberto López Portfolio',
+    description: 'Desarrollador fullstack de software.',
+    images: 'https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    url: 'https://portfolio-hglt1998s-projects.vercel.app/es',
+    type: 'website'
   }
 };
 

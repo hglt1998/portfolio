@@ -13,6 +13,10 @@ export default function Home({ params: { locale } }: any) {
         <title>Mi Portfolio</title>
         <meta name="description" content="Portfolio personal de Humberto López" />
         <link rel="icon" href="/favicon.ico" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@hglt1998" />
+        <meta name="twitter:creator" content="@hglt1998" />
+        <meta name="twitter:image" content="/public/pexels.webp" />
       </Head>
 
       <main className="min-h-screen flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 scroll-smooth transition-colors duration-300">
