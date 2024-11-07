@@ -10,6 +10,7 @@
   "Navbar": {
     "index": "Index",
     "projects": "Projects",
+    "experience": "Experience",
     "aboutme": "About me",
     "contact": "Contact"
   },
@@ -25,8 +26,8 @@
     "i18nDesc": "Multilingual support for spanish and english language.",
     "tailwind": "TailwindCSS",
     "tailwindDesc": "Modern and responsive design.",
-    "hosting": "Hosting",
-    "hostingDesc": "Hosted in Vercel",
+    "hosting": "Hosting and CI/CD",
+    "hostingDesc": "Deployed to Vercel with continuous delivery pipeline from GitHub",
     "featuresTitle": "Highlighted Features",
     "featuresIntro": "This portfolio includes advanced features like:",
     "featureMultilanguage": "Multilingual with i18n",
@@ -81,6 +82,33 @@
     "submitButton": "Send Message",
     "formSubmission": "Your message has been submitted. Thank you!",
     "socialTitle": "Or connect with me on"
+  },
+  "experience": {
+    "pageTitle": "Professional Experience",
+    "company1": "Montrel",
+    "role1": "Fullstack Developer",
+    "description1": "Software development for the main Spanish fuel companies. Front-end developed with Angular and Typescript. Backend built with C# and SQL.",
+    "startDate1": "October 2023",
+    "endDate1": "Present",
+    "company2": "Deloitte",
+    "role2": "Frontend Delivery Analyst",
+    "description2": "Developed solutions for data visualization using Angular third-party libraries such as Keppler.gl, ApexCharts.js and NGX-Graph. Managing migrations to Salesforce more recent versions pipelines in NodeJS. Creation of solutions for European Central Bank’s file management system Darwin with OpenText. Developed solutions for investments management in React/Redux",
+    "startDate2": "July 2022",
+    "endDate2": "October 2023",
+    "company3": "Ayesa",
+    "role3": "Fullstack software developer",
+    "description3": "Developed solutions for government departments managing digital certificates and accessing national population databases. Created microservices for payment processing and led a platform redesign. Utilized Spring Boot and PrimeFaces.",
+    "startDate3": "January 2022",
+    "endDate3": "June 2022",
+    "company4": "Emergya",
+    "role4": "Fullstack software developer",
+    "description4": "Developed solutions using TypeScript and Node.js with machine learning tools to extract information from PDFs and images, categorizing data with RegEx. Built a client application in Angular to enable file submissions.",
+    "startDate4": "July 2021",
+    "endDate4": "December 2021",
+    "dateRange": "{start} - {end}",
+    "otherTitle": "Freelance experience",
+    "otherContent": "Checkout my freelance experience",
+    "projects": "PROJECTS"
   }
 
 }

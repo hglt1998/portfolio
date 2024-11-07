@@ -13,6 +13,22 @@ const nextConfig = {
 			{
 				protocol: "https",
 				hostname: "avatars.githubusercontent.com"
+			},
+			{
+				protocol: "https",
+				hostname: "montrel.es"
+			},
+			{
+				protocol: "https",
+				hostname: "www.deloitte.com"
+			},
+			{
+				protocol: "https",
+				hostname: "www.emergya.com"
+			},
+			{
+				protocol: "https",
+				hostname: "media.licdn.com"
 			}
 		]
 	}

@@ -10,6 +10,7 @@
   "Navbar": {
     "index": "Inicio",
     "projects": "Proyectos",
+    "experience": "Experiencia",
     "aboutme": "Sobre mí",
     "contact": "Contacto"
   },
@@ -25,8 +26,8 @@
     "i18nDesc": "Soporte para idioma español e inglés en toda la web.",
     "tailwind": "TailwindCSS",
     "tailwindDesc": "Diseño moderno, adaptado a los dispositivos y modo claro y oscuro.",
-    "hosting": "Hosting",
-    "hostingDesc": "Proyecto alojado en Vercel",
+    "hosting": "Hosting y CI/CD",
+    "hostingDesc": "Proyecto desplegado en Vercel con entrega continua desde GitHub",
     "featuresTitle": "Funcionalidades Destacadas",
     "featuresIntro": "Este portafolio incluye características avanzadas como:",
     "featureMultilanguage": "Multilenguaje con i18n",
@@ -81,6 +82,33 @@
     "submitButton": "Enviar Mensaje",
     "formSubmission": "Tu mensaje ha sido enviado. ¡Gracias!",
     "socialTitle": "O conéctate conmigo en"
+  },
+  "experience": {
+    "pageTitle": "Experiencia Profesional",
+    "company1": "Montrel S.A.",
+    "role1": "Desarrollador Frontend",
+    "description1": "Desarrollo tecnológico para las principales compañías de carburantes españolas. Desarrollo front-end con Angular y Typescript. Backend desarrollado con .NET y SQL.",
+    "startDate1": "Octubre 2023",
+    "endDate1": "Actual",
+    "company2": "Deloitte",
+    "role2": "Desarrollador Backend",
+    "description2": "Desarrollé soluciones de visualización de datos utilizando librerías de terceros de Angular, como Keppler.gl, ApexCharts.js y NGX-Graph. Gestioné migraciones a versiones más recientes de Salesforce con pipelines en Node.js. Creé soluciones para el sistema de gestión de archivos del Banco Central Europeo, Darwin, utilizando OpenText. Desarrollé soluciones de gestión de inversiones en React/Redux.",
+    "startDate2": "Julio 2022",
+    "endDate2": "Octubre 2023",
+    "company3": "Ayesa",
+    "role3": "Desarollador Fullstack",
+    "description3": "Desarrollé soluciones para departamentos gubernamentales en la gestión de certificados digitales y el uso de bases de datos nacionales de población. Creé microservicios para el procesamiento de pagos y lideré el rediseño de la plataforma. Utilicé Spring Boot y PrimeFaces.",
+    "startDate3": "Enero 2022",
+    "endDate3": "Junio 2022",
+    "company4": "Emergya",
+    "role4": "Desarollador Fullstack",
+    "description4": "Desarrollé soluciones con TypeScript y Node.js utilizando herramientas de aprendizaje automático para extraer información de archivos PDF e imágenes, categorizando los datos con expresiones regulares (RegEx). Creé una aplicación cliente en Angular para facilitar el envío de archivos.",
+    "startDate4": "Julio 2021",
+    "endDate4": "Diciembre 2021",
+    "dateRange": "{start} - {end}",
+    "otherTitle": "Trabajos freelance",
+    "otherContent": "Consulta mi experiencia en otros",
+    "projects": "PROYECTOS"
   }
   
 }
