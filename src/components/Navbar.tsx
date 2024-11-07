@@ -36,7 +36,7 @@ export default function Navbar() {
                 />
               </svg>
             </summary>
-            <div className="flex flex-col absolute top-0 bg-white dark:bg-gray-800 shadow-md rounded mt-2 right-5">
+            <div className="flex flex-col absolute top-12 bg-white dark:bg-gray-800 shadow-md rounded mt-2 right-5">
               <Link href="/" className="px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400">
                 {t('index')}
               </Link>

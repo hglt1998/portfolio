@@ -30,7 +30,7 @@ const TechnologiesBlock = () => {
   ];
 
   return (
-    <div className="max-w-4xl mx-auto py-8 px-4 bg-indigo-100 dark:bg-gray-800 rounded-lg shadow-lg text-center">
+    <div className="lg:max-w-4xl sm:max-w-full mx-auto py-8 px-4 bg-indigo-100 dark:bg-gray-800 rounded-lg shadow-lg text-center">
       <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-200 mb-6">
         {t('technologiesTitle')}
       </h2>
@@ -38,7 +38,7 @@ const TechnologiesBlock = () => {
         {t('technologiesIntro')}
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 w-full sm:grid-cols-4 gap-4">
         {technologies.map((tech) => (
           <div key={tech.name} className="text-left mb-4">
             <span className="font-semibold text-gray-800 dark:text-gray-200">

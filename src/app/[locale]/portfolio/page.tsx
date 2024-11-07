@@ -6,7 +6,7 @@ export default function AboutPortfolioPage() {
   return (
     <main className="max-w-5xl mx-auto p-6 bg-gray-50 dark:bg-gray-800 dark:text-gray-200 mt-9 grid grid-cols-1 md:grid-cols-3 gap-6 min-h-[calc(100vh-11rem)]">
       {/* Columna izquierda - Sidebar */}
-      <aside className="col-span-1 bg-gray-100 dark:bg-gray-900 p-4 rounded-lg shadow-lg sticky top-6 h-full">
+      <aside className="col-span-1 bg-gray-100 dark:bg-gray-900 p-4 sm:mx-auto rounded-lg shadow-lg md:sticky top-6 h-full">
         <h2 className="text-xl font-bold text-indigo-700 dark:text-indigo-400 mb-4">
           {t('technologiesTitle')}
         </h2>
@@ -69,8 +69,8 @@ export default function AboutPortfolioPage() {
           <h2 className="text-2xl font-semibold text-indigo-600 dark:text-indigo-300 mb-4">
             {t('aboutTitle')}
           </h2>
-          <p className='text-gray-700'>{t('aboutParagraph')}</p>
-          <p className='text-gray-700'>{t('aboutParagraph2')}</p>
+          <p className='text-gray-700 dark:text-gray-400'>{t('aboutParagraph')}</p>
+          <p className='text-gray-700 dark:text-gray-400'>{t('aboutParagraph2')}</p>
         </section>
 
         {/* Proceso de Desarrollo */}

@@ -15,7 +15,7 @@ export default function LanguageChanger() {
   };
 
   return (
-    <select onChange={handleChange} value={localePath} className="text-center py-1 bg-transparent dark:text-gray-300">
+    <select onChange={handleChange} value={localePath} className="text-center mx-auto py-1 bg-transparent dark:text-gray-300">
       <option className="dark:text-white" value="es">🇪🇸 Esp</option>
       <option className="dark:text-white" value="en">🇺🇸 Eng</option>
     </select>
