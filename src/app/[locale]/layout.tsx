@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
+import { Analytics } from "@vercel/analytics/react";
 
 
 export const metadata: Metadata = {
@@ -36,6 +37,7 @@ export default async function RootLayout({
   return (
     <html className="scroll-smooth flex flex-col min-h-screen">
       <body className="dark:bg-gray-900 h-screen">
+        <Analytics />
         <NextIntlClientProvider messages={messages}>
           <Navbar />
           {children}
