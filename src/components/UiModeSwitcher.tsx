@@ -1,26 +1,42 @@
-"use client"
+"use client";
 
+import { useEffect, useRef } from "react";
 import { MoonIcon, SunIcon } from "@heroicons/react/24/outline";
 
 export default function UiModeSwitcher() {
-  // Función para alternar entre modo oscuro y claro
+
+  const rootElement = useRef(document.documentElement);
+
   const toggleDarkMode = () => {
-    if (document.documentElement.classList.contains('dark')) {
-      document.documentElement.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
+    if (rootElement.current.classList.contains("dark")) {
+      rootElement.current.classList.remove("dark");
+      localStorage.setItem("theme", "light");
     } else {
-      document.documentElement.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
+      rootElement.current.classList.add("dark");
+      localStorage.setItem("theme", "dark");
     }
   };
+
+  useEffect(() => {
+    const storedTheme = localStorage.getItem("theme");
+    if (
+      storedTheme === "dark" ||
+      (!storedTheme && window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      rootElement.current.classList.add("dark");
+    } else {
+      rootElement.current.classList.remove("dark");
+    }
+  }, []);
+
   return (
     <button
       onClick={toggleDarkMode}
       className="transition-colors mr-3"
-      aria-label="Toggle dark mode" >
-      {/* Cambia el icono según el tema */}
+      aria-label="Toggle dark mode"
+    >
       <SunIcon className="block dark:hidden size-6" />
       <MoonIcon className="hidden dark:block size-6 text-gray-300" />
     </button>
-  )
+  );
 }

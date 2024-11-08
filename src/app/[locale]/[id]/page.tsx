@@ -52,17 +52,18 @@ function ProjectDetailPage() {
         <p className="text-gray-700 dark:text-gray-300 text-sm mt-2">{project.properties[locale + '_ShortDescription'].rich_text[0].plain_text}</p>
       </div>
 
-      {/* Imagen de portada */}
       <div className="w-full h-64 relative mb-8 rounded-lg overflow-hidden shadow-xl">
-        <Image src={project.cover.file.url || defaultImage}
+        <Image
+          src={project.cover.file.url || defaultImage}
           alt="cover image"
-          layout="fill"
-          objectFit="cover"
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          style={{ objectFit: 'cover' }}
           className="rounded-lg shadow-xl drop-shadow-lg"
         />
       </div>
       {selectedImage && (<ModalImage selectedImage={selectedImage} closeModal={closeModal} />)}
-      {/* Tecnologías */}
+
       <section className="mb-8">
         <h3 className="text-xl font-semibold text-indigo-500 dark:text-indigo-300 mb-4">{locale === "es" ? "Tecnologías utilizadas" : "Technologies used"}</h3>
         <div className="flex flex-wrap gap-2">
@@ -74,7 +75,6 @@ function ProjectDetailPage() {
         </div>
       </section>
 
-      {/* Descripción completa */}
       <section className="mb-8">
         <h2 className="text-xl font-semibold text-indigo-500 dark:text-indigo-300 mb-4">{locale === "es" ? "Descripción" : "Description"}</h2>
         <p className="text-gray-700 dark:text-gray-300 leading-relaxed">{project.properties[locale + '_description'].rich_text[0].plain_text}</p>
@@ -90,10 +90,12 @@ function ProjectDetailPage() {
                 <Image
                   src={img.file.url}
                   alt={img.name}
-                  layout="fill"
-                  objectFit="cover"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  style={{ objectFit: 'cover' }}
                   className="transition-transform duration-200 ease-in-out transform hover:scale-105"
                 />
+
               </div>
             ))}
           </div>
@@ -101,7 +103,6 @@ function ProjectDetailPage() {
       )}
 
 
-      {/* Tags */}
       <section className="mb-8">
         <h3 className="text-xl font-semibold text-indigo-500 dark:text-indigo-300 mb-4">{locale === "es" ? "Etiquetas" : "Tags"}</h3>
         <div className="flex flex-wrap gap-2">
@@ -113,7 +114,6 @@ function ProjectDetailPage() {
         </div>
       </section>
 
-      {/* Enlace al proyecto */}
       <div className="text-center">
         <Link rel="_noopener" target="_blank" className="flex text-center justify-center gap-3 items-center bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition-colors md:w-3/12 md:m-auto duration-200" href={project.properties?.Link.url || "#"}>
           {locale === "es" ? "Ver proyecto" : "View Project"}

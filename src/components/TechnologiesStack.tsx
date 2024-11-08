@@ -1,11 +1,8 @@
-// src/components/TechnologiesBlock.tsx
-
 import { useTranslations } from 'next-intl';
 
 const TechnologiesBlock = () => {
   const t = useTranslations('Technologies');
 
-  // Lista de tecnologías con niveles de conocimiento en porcentaje (0 a 100)
   const technologies = [
     { name: "React", level: 100 },
     { name: "React Native", level: 100 },

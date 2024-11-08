@@ -13,11 +13,10 @@ export async function GET(req: Request) {
   }
 
   try {
-    const response = await notion.databases.query({ database_id: NOTION_DATABASE_ID })
+    const response = await notion.databases.query({ database_id: NOTION_DATABASE_ID, sorts: [{ property: 'Created', direction: 'ascending', timestamp: 'created_time' }] })
 
     return NextResponse.json(response.results)
   } catch (error) {
-    console.log(error);
     return NextResponse.json({ message: "Failed to fetch data from Notion" }, { status: 500 })
   }
 }

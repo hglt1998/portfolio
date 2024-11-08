@@ -1,5 +1,4 @@
 import notion from "@/lib/notion";
-import { NextApiRequest, NextApiResponse } from "next";
 import { NextResponse } from "next/server";
 
 export async function GET(req: any, { params }: { params: { id: string } }) {

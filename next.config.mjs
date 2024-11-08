@@ -31,7 +31,8 @@ const nextConfig = {
 				hostname: "media.licdn.com"
 			}
 		]
-	}
+	},
+	reactStrictMode: false
 };
 
 export default withNextIntl(nextConfig);

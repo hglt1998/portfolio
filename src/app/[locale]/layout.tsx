@@ -15,12 +15,12 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "Humberto López Portfolio",
     description: "Get in touch with me",
-    images: ['https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2']
+    images: ['https://firebasestorage.googleapis.com/v0/b/bandstats-4d059.firebasestorage.app/o/metaImage.webp?alt=media&token=458417a0-fc8c-4c8c-8e15-8eca9d0510d3']
   },
   openGraph: {
     title: 'Humberto López Portfolio',
     description: 'Desarrollador fullstack de software.',
-    images: 'https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    images: 'https://firebasestorage.googleapis.com/v0/b/bandstats-4d059.firebasestorage.app/o/metaImage.webp?alt=media&token=458417a0-fc8c-4c8c-8e15-8eca9d0510d3',
     url: 'https://portfolio-hglt1998s-projects.vercel.app/es',
     type: 'website'
   }

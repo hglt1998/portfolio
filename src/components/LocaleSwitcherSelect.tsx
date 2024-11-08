@@ -6,7 +6,7 @@ export default function LanguageChanger() {
   const router = useRouter();
   const pathname = usePathname();
   const localePath = pathname.split("/")[1];
-  const currentPath = pathname.split("/").slice(2).join("/"); // Parte de la URL sin el idioma actual
+  const currentPath = pathname.split("/").slice(2).join("/");
 
   const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const selectedLocale = e.target.value;

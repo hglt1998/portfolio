@@ -10,14 +10,12 @@ export default function Navbar() {
     <nav className="w-full bg-white dark:bg-gray-800 shadow-md static bottom-0 z-10 transition-colors duration-300">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center py-4">
-          {/* Título */}
           <div className="text-lg font-bold">
             <Link href="/" className="text-indigo-700 dark:text-indigo-300">
               Humberto López
             </Link>
           </div>
 
-          {/* Menú desplegable para móviles */}
           <details className="md:hidden">
             <summary className="flex items-center cursor-pointer">
               <UiModeSwitcher />
@@ -56,7 +54,6 @@ export default function Navbar() {
             </div>
           </details>
 
-          {/* Menú de escritorio */}
           <div className="hidden md:flex space-x-4">
             <Link href="/" className="px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400">
               {t('index')}

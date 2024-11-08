@@ -16,7 +16,7 @@ export default function Home({ params: { locale } }: any) {
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@hglt1998" />
         <meta name="twitter:creator" content="@hglt1998" />
-        <meta name="twitter:image" content="/public/pexels.webp" />
+        <meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/bandstats-4d059.firebasestorage.app/o/metaImage.webp?alt=media&token=458417a0-fc8c-4c8c-8e15-8eca9d0510d3" />
       </Head>
 
       <main className="min-h-screen flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 scroll-smooth transition-colors duration-300">
