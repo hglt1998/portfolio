@@ -2,6 +2,7 @@ import { useTranslations } from 'next-intl';
 import LocaleSwitcherSelect from './LocaleSwitcherSelect';
 import UiModeSwitcher from './UiModeSwitcher';
 import { Link } from '@/i18n/routing';
+import MobileMenu from './MobileMenu'; // Componente cliente
 
 export default function Navbar() {
   const t = useTranslations('Navbar');
@@ -16,44 +17,10 @@ export default function Navbar() {
             </Link>
           </div>
 
-          <details className="md:hidden">
-            <summary className="flex items-center cursor-pointer">
-              <UiModeSwitcher />
-              <svg
-                className="w-6 h-6 text-gray-700 dark:text-gray-300"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16m-7 6h7"
-                />
-              </svg>
-            </summary>
-            <div className="flex flex-col absolute top-12 bg-white dark:bg-gray-800 shadow-md rounded mt-2 right-5 z-10">
-              <Link href="/" className="px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400">
-                {t('index')}
-              </Link>
-              <Link href="/#projects" className="px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400">
-                {t('projects')}
-              </Link>
-              <Link href="/experience" className="px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400">
-                {t('experience')}
-              </Link>
-              <Link href="/me" className="px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400">
-                {t('aboutme')}
-              </Link>
-              <Link href="/contact" className="px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400">
-                {t('contact')}
-              </Link>
-              <LocaleSwitcherSelect />
-            </div>
-          </details>
+          {/* Componente cliente que gestiona el menú móvil */}
+          <MobileMenu />
 
+          {/* Menú para pantallas grandes */}
           <div className="hidden md:flex space-x-4">
             <Link href="/" className="px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400">
               {t('index')}

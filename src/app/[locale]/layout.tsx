@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
 
 
 export const metadata: Metadata = {
@@ -26,16 +27,17 @@ export const metadata: Metadata = {
   }
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const messages = await getMessages()
   return (
     <html className="scroll-smooth flex flex-col min-h-screen">
       <body className="dark:bg-gray-900 h-screen">
-        <Navbar />
-        <NextIntlClientProvider>
+        <NextIntlClientProvider messages={messages}>
+          <Navbar />
           {children}
         </NextIntlClientProvider>
         <Footer />
