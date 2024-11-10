@@ -73,13 +73,13 @@
     "knowledgeLevel": "Knowledge Level"
   },
   "Contact": {
-    "contactTitle": "Get in Touch",
+    "contactTitle": "Get in touch",
     "contactIntro": "Feel free to reach out via this form or through my social media links.",
-    "nameLabel": "Your Name",
-    "emailLabel": "Your Email",
+    "nameLabel": "Your name",
+    "emailLabel": "Your email",
     "subject": "Subject",
-    "messageLabel": "Your Message",
-    "submitButton": "Send Message",
+    "messageLabel": "Your message",
+    "submitButton": "Send message",
     "formSubmission": "Your message has been submitted. Thank you!",
     "socialTitle": "Or connect with me on"
   },

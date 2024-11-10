@@ -75,11 +75,11 @@
   "Contact": {
     "contactTitle": "Contacto",
     "contactIntro": "No dudes en enviarme un mensaje a través de este formulario o en mis redes sociales.",
-    "nameLabel": "Tu Nombre",
-    "emailLabel": "Tu Correo Electrónico",
+    "nameLabel": "Tu nombre",
+    "emailLabel": "Tu correo electrónico",
     "subject": "Asunto",
-    "messageLabel": "Tu Mensaje",
-    "submitButton": "Enviar Mensaje",
+    "messageLabel": "Tu mensaje",
+    "submitButton": "Enviar mensaje",
     "formSubmission": "Tu mensaje ha sido enviado. ¡Gracias!",
     "socialTitle": "O conéctate conmigo en"
   },

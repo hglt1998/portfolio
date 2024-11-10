@@ -6,7 +6,7 @@ import { useState } from 'react';
 const Contact = () => {
   const t = useTranslations('Contact');
   const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
-  const [message, setMessage] = useState('JEJEJEJJE')
+  const [message, setMessage] = useState('')
   const [loading, setLoading] = useState(false)
 
   const locale = window.location.pathname.split("/")[1]
