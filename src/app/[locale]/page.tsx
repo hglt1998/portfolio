@@ -47,19 +47,19 @@ export default function Home({ params: { locale } }: any) {
           </div>
         </section>
 
-        {/* Techstack Section */}
-        <section id="techstack" className="md:px-24 px-10 my-10 w-full">
-          <h1 className="text-3xl text-center uppercase font-extrabold mb-5 text-indigo-700 dark:text-indigo-300 tracking-wide">
-            {t('techstack')}
-          </h1>
-          <TechnologiesBlock />
-        </section>
         {/* Projects Section */}
         <section id="projects" className="md:px-24 px-10 my-10 w-full">
           <h1 className="text-3xl text-center uppercase font-extrabold mb-5 text-indigo-700 dark:text-indigo-300 tracking-wide">
             {t('projects')}
           </h1>
           <Projects locale={locale} />
+        </section>
+        {/* Techstack Section */}
+        <section id="techstack" className="md:px-24 px-10 my-10 w-full">
+          <h1 className="text-3xl text-center uppercase font-extrabold mb-5 text-indigo-700 dark:text-indigo-300 tracking-wide">
+            {t('techstack')}
+          </h1>
+          <TechnologiesBlock />
         </section>
       </main>
     </div>
