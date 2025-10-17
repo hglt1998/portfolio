@@ -16,7 +16,7 @@ const nextConfig = {
 			},
 			{
 				protocol: "https",
-				hostname: "montrel.es"
+				hostname: "www.montrel.es"
 			},
 			{
 				protocol: "https",
@@ -29,6 +29,10 @@ const nextConfig = {
 			{
 				protocol: "https",
 				hostname: "media.licdn.com"
+			},
+			{
+				protocol: "https",
+				hostname: "refu.com"
 			}
 		]
 	},
