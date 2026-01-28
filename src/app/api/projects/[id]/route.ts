@@ -1,7 +1,8 @@
 import notion from "@/lib/notion";
 import { NextResponse } from "next/server";
 
-export async function GET(_req: Request, { params }: { params: { id: string } }) {
+export async function GET(_req: Request, { params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
   const { NOTION_DATABASE_ID } = process.env
 
   if (!NOTION_DATABASE_ID) {
@@ -13,7 +14,7 @@ export async function GET(_req: Request, { params }: { params: { id: string } })
   }
 
   try {
-    const response = await notion.pages.retrieve({ page_id: params.id })
+    const response = await notion.pages.retrieve({ page_id: id })
 
     return NextResponse.json({
       data: response
