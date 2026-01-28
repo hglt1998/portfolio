@@ -12,7 +12,9 @@
 		"projects": "Proyectos",
 		"experience": "Experiencia",
 		"aboutme": "Sobre mí",
-		"contact": "Contacto"
+		"contact": "Contacto",
+		"openMenu": "Abrir menú",
+		"closeMenu": "Cerrar menú"
 	},
 	"About": {
 		"title": "Desarrollo de mi Portfolio Web",

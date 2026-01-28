@@ -1,8 +1,5 @@
-// src/pages/experience.js
-
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
-import Head from "next/head";
 import Image from "next/image";
 
 export default function Experience() {
@@ -59,12 +56,7 @@ export default function Experience() {
 	];
 
 	return (
-		<>
-			<Head>
-				<title>{t("pageTitle")}</title>
-			</Head>
-
-			<main className="container mx-auto px-4 py-8 lg:py-16">
+		<main className="container mx-auto px-4 py-8 lg:py-16">
 				<h1 className="text-3xl font-bold mb-8 text-gray-800 dark:text-gray-200">{t("pageTitle")}</h1>
 
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
@@ -99,6 +91,5 @@ export default function Experience() {
 					</div>
 				</div>
 			</main>
-		</>
 	);
 }

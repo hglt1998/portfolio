@@ -1,10 +1,15 @@
 "use client"
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { useEffect } from "react";
+import { useParams } from "next/navigation";
+
+type LocaleParams = {
+  locale: string;
+};
 
 export default function AboutPage() {
-  const locale = window.location.pathname.split("/")[1]
+  const params = useParams<LocaleParams>();
+  const locale = params.locale;
   const t = useTranslations("Me");
 
   return (

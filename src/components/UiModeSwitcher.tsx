@@ -4,10 +4,11 @@ import { useEffect, useRef } from "react";
 import { MoonIcon, SunIcon } from "@heroicons/react/24/outline";
 
 export default function UiModeSwitcher() {
-
-  const rootElement = useRef(document.documentElement);
+  const rootElement = useRef<HTMLElement | null>(null);
 
   const toggleDarkMode = () => {
+    if (!rootElement.current) return;
+
     if (rootElement.current.classList.contains("dark")) {
       rootElement.current.classList.remove("dark");
       localStorage.setItem("theme", "light");
@@ -18,6 +19,9 @@ export default function UiModeSwitcher() {
   };
 
   useEffect(() => {
+    // Inicializar el ref en el cliente
+    rootElement.current = document.documentElement;
+
     const storedTheme = localStorage.getItem("theme");
     if (
       storedTheme === "dark" ||

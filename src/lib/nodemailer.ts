@@ -1,9 +1,16 @@
-// utils/nodemailer.js
+// utils/nodemailer.ts
 import nodemailer from 'nodemailer';
+
+type FormData = {
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+};
 
 export const transporter = nodemailer.createTransport({
   host: process.env.SMTP_HOST,
-  port: Number(process.env.SMTP_PORT) | 465,
+  port: Number(process.env.SMTP_PORT) || 465,
   secure: true,
   auth: {
     user: process.env.SMTP_USER,
@@ -20,15 +27,16 @@ export const sendCustomerEmail = async (email: string) => {
   };
 
   try {
-    await transporter.sendMail(mailOptions).catch(error => console.error("Error: ", error));
+    await transporter.sendMail(mailOptions);
   } catch (error) {
     if (error instanceof Error) {
-      throw new Error("Ha habido un error al enviar el correo: ", error)
+      throw new Error(`Ha habido un error al enviar el correo: ${error.message}`);
     }
+    throw error;
   }
 };
-export const sendEmail = async (formData: any) => {
 
+export const sendEmail = async (formData: FormData) => {
   const mailOptions = {
     from: formData.email,
     to: process.env.SMTP_USER,
@@ -37,10 +45,11 @@ export const sendEmail = async (formData: any) => {
   };
 
   try {
-    await transporter.sendMail(mailOptions).catch(error => console.error("Error: ", error));
+    await transporter.sendMail(mailOptions);
   } catch (error) {
     if (error instanceof Error) {
-      throw new Error("Ha habido un error al enviar el correo: ", error)
+      throw new Error(`Ha habido un error al enviar el correo: ${error.message}`);
     }
+    throw error;
   }
 };

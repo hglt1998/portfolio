@@ -12,7 +12,9 @@
 		"projects": "Projects",
 		"experience": "Experience",
 		"aboutme": "About me",
-		"contact": "Contact"
+		"contact": "Contact",
+		"openMenu": "Open menu",
+		"closeMenu": "Close menu"
 	},
 	"About": {
 		"title": "Development of My Web Portfolio",

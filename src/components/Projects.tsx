@@ -11,7 +11,7 @@ type NotionPage = {
 	};
 };
 
-export default function ClientComponent({ locale }: any) {
+export default function ClientComponent() {
 	const { data, loading, error } = useProjects();
 
 	if (loading) return <CardSkeleton />;
@@ -21,7 +21,7 @@ export default function ClientComponent({ locale }: any) {
 		<div className="grid grid-cols-1 gap-3 lg:grid-cols-2 max-w-4xl place-content-center m-auto">
 			{data?.map((item: NotionPage) => (
 				<div key={item.id} className="opacity-0 animate-fadeIn transition-opacity duration-500">
-					<ProjectCard item={item} locale={locale} />
+					<ProjectCard item={item} />
 				</div>
 			))}
 		</div>
